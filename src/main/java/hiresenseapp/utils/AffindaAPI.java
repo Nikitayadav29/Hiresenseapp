@@ -20,7 +20,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class AffindaAPI {
-    private static final String API_KEY = "REMOVED_API_KEY";
+	private static final String API_KEY = "YOUR_AFFINDA_API_KEY_HERE";
 
     public static String analyzeResume(File resumeFile) throws IOException {
         String boundary = "----WebKitFormBoundary" + UUID.randomUUID();
