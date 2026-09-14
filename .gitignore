@@ -1,0 +1,25 @@
+# Build files
+build/
+target/
+bin/
+*.class
+
+# Eclipse project files
+.settings/
+.classpath
+.project
+.metadata/
+
+# Uploaded resumes (test/user data - not part of source code)
+webapp/resumes/*
+src/main/webapp/resumes/*
+
+# Real web.xml with DB credentials - NEVER push this
+src/main/webapp/WEB-INF/web.xml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

@@ -1,0 +1,32 @@
+<web-app>
+<listener>
+<listener-class>hiresenseapp.dbutils.AppInitializer</listener-class>
+</listener>
+<!--  Database credentials (update these with your local MySQL credentials before running) -->
+<context-param>
+<param-name>dbUrl</param-name>
+<param-value>jdbc:mysql://localhost:3306/hiresense_db</param-value>
+</context-param>
+<context-param>
+<param-name>username</param-name>
+<param-value>YOUR_DB_USERNAME</param-value>
+</context-param>
+<context-param>
+<param-name>password</param-name>
+<param-value>YOUR_DB_PASSWORD</param-value>
+</context-param>
+<!--  Application name  -->
+<context-param>
+<param-name>appName</param-name>
+<param-value>HireSenseapp</param-value>
+</context-param>
+<error-page>
+<exception-type>java.lang.Exception</exception-type>
+<location>/error.jsp</location>
+</error-page>
+<!--  For 404 (Page Not Found)  -->
+<error-page>
+<error-code>404</error-code>
+<location>/error.jsp</location>
+</error-page>
+</web-app>
