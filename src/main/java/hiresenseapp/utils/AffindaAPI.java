@@ -20,7 +20,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class AffindaAPI {
-	private static final String API_KEY = "YOUR_AFFINDA_API_KEY_HERE";
+	private static final String API_KEY = "aff_7871b882e8233b3d10432fb77199789706aa8019";
 
     public static String analyzeResume(File resumeFile) throws IOException {
         String boundary = "----WebKitFormBoundary" + UUID.randomUUID();
